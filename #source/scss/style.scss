@@ -1,0 +1,233 @@
+// Файл обнуляющих стилей
+@import "_nullstyle";
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,regular,700");
+
+$dark: #202020;
+$gren: #4f4f4f;
+$light: #b2b2b2;
+
+body {
+   font-family: "Ubuntu", sans-serif;
+   font-size: 14px;
+   color: $dark;
+}
+.wrapper {
+   width: 100%;
+   max-width: 1210px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+.logo {
+   display: flex;
+   align-items: center;
+   font-size: 24px;
+   color: $dark;
+   &__img {
+      display: block;
+      width: 58px;
+      height: 58px;
+      background: url(../img/logo.svg) no-repeat;
+   }
+   &__titel {
+      margin-left: 25px;
+   }
+}
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-sizing: border-box;
+   padding: 53px 0px 0px 0px;
+   font-weight: bold;
+
+   // .header__menu
+
+   &__menu {
+      padding-top: 10px;
+   }
+}
+.menu {
+   // .menu__icon
+   &__icon {
+   }
+   // .menu__body
+   &__body {
+   }
+   // .menu__list
+   &__list {
+      align-items: center;
+      display: flex;
+      & li {
+         margin-left: 37px;
+         & button {
+         }
+      }
+   }
+   // .menu__link
+   &__link {
+      color: $dark;
+      line-height: 16px;
+      font-weight: bold;
+   }
+   &__btn {
+      width: 100px;
+      height: 24px;
+      line-height: 16px;
+      border-radius: 5px;
+      font-weight: bold;
+   }
+}
+.btn {
+   background: #5528ff;
+   color: #ffffff;
+}
+.icon-menu {
+}
+
+.page {
+   padding: 117px 0px 109px 0px;
+   &__titel {
+      display: block;
+      width: 101%;
+      font-weight: bold;
+      font-size: 57px;
+      line-height: 65px;
+      padding-bottom: 30px;
+   }
+   &__text {
+      display: block;
+      font-size: 32px;
+      line-height: 51px;
+      width: 741px;
+      height: 196px;
+      color: $gren;
+      margin-bottom: 76px;
+   }
+   &__btn {
+      font-size: 24px;
+      line-height: 28px;
+      width: 235px;
+      height: 60px;
+      border-radius: 10px;
+   }
+}
+.page-top {
+   border-top: 0.5px solid #c2c2c2;
+}
+.wrapper {
+   & h2 {
+      display: inline-block;
+      position: relative;
+      font-weight: 300;
+      line-height: 16px;
+      color: #c2c2c2;
+      padding: 5px 39px 5px 19px;
+      top: -14px;
+      left: -20px;
+      background-color: #fff;
+   }
+}
+.services {
+   display: grid;
+   grid-template: 1fr 1fr / 1fr 1fr;
+   grid-row-gap: 65px;
+   grid-column-gap: 175px;
+   padding-top: 76px;
+   padding-bottom: 50px;
+   padding-bottom: 107px;
+}
+.services-item {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   // .services-item__img
+   &__img {
+      width: 95px;
+      text-align: center;
+   }
+   // .services-item__text
+   &__text {
+      padding-left: 37px;
+      color: $light;
+      & h3 {
+         font-size: 28px;
+         line-height: 32px;
+         color: #000;
+         padding-bottom: 17px;
+      }
+      & p {
+         display: block;
+         width: 300px;
+
+         line-height: 19px;
+      }
+   }
+}
+
+.clients {
+   display: grid;
+   grid-template: repeat(2, 1fr) / repeat(4, 25%);
+   text-align: center;
+   grid-row-gap: 47px;
+   grid-column-gap: 11px;
+   padding-top: 42px;
+   padding-bottom: 104px;
+   // .clients__item
+   &__item {
+   }
+}
+
+.team {
+   display: grid;
+   grid-template: 1fr 1fr 1fr / repeat(3, 33.33%);
+   grid-row-gap: 51px;
+   grid-column-gap: 20px;
+   padding-top: 84px;
+   padding-bottom: 100px;
+}
+.team-item {
+   display: flex;
+   justify-content: flex-start;
+
+   // .team-item__img
+   &__img {
+   }
+   // .team-item__text
+   &__text {
+      padding-left: 35px;
+      & h3 {
+         font-weight: bold;
+         font-size: 28px;
+         line-height: 32px;
+         padding-bottom: 14px;
+         margin-top: 18px;
+      }
+      & p {
+         color: $light;
+      }
+   }
+}
+
+footer {
+   background: #f7f7f7;
+}
+
+.footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100px;
+   &__logo {
+      margin-left: 16px;
+   }
+   &__icons {
+      position: relative;
+      font-size: 27px;
+      color: $light;
+      right: -25px;
+      top: -4px;
+   }
+}
+.zmdi {
+   padding-left: 36px;
+}
